@@ -19,7 +19,6 @@
 }
 .u-name {
 	font-size: 20px;
-	padding-left: 17px;
 }
 .u-name b {
 	color: #127b8e;
@@ -100,8 +99,8 @@
 }
 #navbtn {
 	display: inline-block;
-	margin-left: 70px;
 	font-size: 20px;
+	margin-right:40px;
 	transition: 500ms color;
 }
 #checkbox {

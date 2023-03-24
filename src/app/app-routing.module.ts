@@ -6,6 +6,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { UserLoginComponent } from './components/user-login/user-login.component';
+import { InventoryComponent } from './inventory/inventory.component';
 
 const routes: Routes = [
   {path : '', component : AdminDashboardComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path : 'toolbar', component : ToolbarComponent},
   {path : 'user-login', component : UserLoginComponent},
   {path : 'admin-dashoboard', component: AdminDashboardComponent},
+  {path : 'inventory', component : InventoryComponent},
 ];
 
 @NgModule({

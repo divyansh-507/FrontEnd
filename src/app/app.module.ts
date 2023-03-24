@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { AdminDashboardComponent } from './components/admin-dashboard/admin-dashboard.component';
 import { AdminCardsComponent } from './components/admin-cards/admin-cards.component';
+import { InventoryComponent } from './inventory/inventory.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { AdminCardsComponent } from './components/admin-cards/admin-cards.compon
     HomeComponent,
     AdminDashboardComponent,
     AdminCardsComponent,
+    InventoryComponent,
   ],
   imports: [
     BrowserModule,
