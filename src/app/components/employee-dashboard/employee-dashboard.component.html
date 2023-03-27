@@ -1,5 +1,4 @@
-<p>admin-dashboard works!</p>
-
+<p>employee-dashboard works!</p>
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -17,8 +16,8 @@
 <div class="body">
 	<nav class="side-bar">
 		<div class="user-p">
-			<img src="../../../assets/admin.jpg">
-			<h4>Hello  admin</h4>
+			<img src="../../../assets/cashier.jpg">
+			<h4>Hello Employee</h4>
 		</div>
 		<ul>
 			<li>
@@ -30,37 +29,25 @@
 			<li>
 				<a href="#">
 					<i class="fa fa-user-circle"></i>
-					<span>Add Employee</span>
+					<span>Add Customer</span>
 				</a>
 			</li>
 			<li>
 				<a href="#">
 					<i class="fa fa-users"></i>
-					<span>View Employees</span>
-				</a>
-			</li>
-			<li>
-				<a href="#" (click)="addProduct()">
-					<i class="fa fa-plus"></i>
-					<span>Add Product</span>
+					<span>Generate Bill</span>
 				</a>
 			</li>
 			<li>
 				<a href="#">
 					<i class="fa fa-window-restore"></i>
-					<span>Inventory</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class="fa fa-opencart"></i>
-					<span>Update Stock</span>
+					<span>View Inventory</span>
 				</a>
 			</li>
 			<li>
 				<a href="#">
 					<i class="fa fa-area-chart"></i>
-					<span>Sales</span>
+					<span>View Orders</span>
 				</a>
 			</li>
 			<li>
@@ -72,7 +59,7 @@
 		</ul>
 	</nav> 
 	<section class="cards">
-		<app-admin-cards></app-admin-cards>
+		<app-employee-cards></app-employee-cards>
 
 		<h1>WELCOME</h1>
 		<p style="text-align: center;">#divyansh_projects</p>
@@ -91,9 +78,6 @@
 						<th>Quantity</th>
 					</tr>
 					</thead>
-					<tbody>
-
-					</tbody>
 				</table>
 				</div>
 			
@@ -110,9 +94,6 @@
 						<th>Amount</th>
 					</tr>
 					</thead>
-					<tbody>
-
-					</tbody>
 				</table>
 				</div>
 			</div>

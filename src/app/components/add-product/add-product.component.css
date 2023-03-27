@@ -1,0 +1,20 @@
+mat-dialog-content{
+    width: 600px;
+}
+
+mat-grid-list{
+    overflow:hidden;
+}
+
+mat-form-field{
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:10px;
+}
+button{
+    margin-left:10px;
+    margin-right:10px;
+    padding:10px;
+}
