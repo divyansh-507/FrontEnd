@@ -6,7 +6,6 @@ import { AdminLayoutComponent } from './components/admin-layout/admin-layout.com
 import { LoginComponent } from './components/auth/login/login.component';
 import { EmployeeCardsComponent } from './components/employee-cards/employee-cards.component';
 import { EmployeeDashboardComponent } from './components/employee-dashboard/employee-dashboard.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { InventoryComponent } from './inventory/inventory.component';
@@ -14,7 +13,6 @@ import { InventoryComponent } from './inventory/inventory.component';
 const routes: Routes = [
   {path : '', component : AddProductComponent},
   {path : 'home', component : HomeComponent},
-  {path : 'footer', component : FooterComponent},
   {path : 'toolbar', component : ToolbarComponent},
   {path : 'login', component : LoginComponent},
   {path : 'admin-dashboard', component: AdminDashboardComponent},

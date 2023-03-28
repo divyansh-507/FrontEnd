@@ -23,6 +23,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { LoginComponent } from './components/auth/login/login.component';
+import { FooterComponent } from './components/footer/footer.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +37,7 @@ import { LoginComponent } from './components/auth/login/login.component';
     EmployeeCardsComponent,
     AddProductComponent,
     LoginComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
