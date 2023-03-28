@@ -23,6 +23,7 @@ a{
     padding-top:20px;
     padding-bottom:20px;
     background-color: rgb(208, 216, 233);
+    min-height: 1000px;
 }
 .home-img{
     width:100%;
