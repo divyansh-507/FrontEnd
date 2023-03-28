@@ -70,6 +70,15 @@ export class RestService {
     return this.http.delete(deleteUrl);
   }
 
+  //get all Customers
+  getCustomer():Observable<any>{
+    return this.http.get(this.strUrl + '/getCustomer');
+  }
+
+  //get all Transactions
+  getTransaction():Observable<any>{
+    return this.http.get(this.strUrl + '/getTransaction');
+  }
 
   //login
   // login(loginObj: any): Observable<any> {
