@@ -24,6 +24,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { LoginComponent } from './components/auth/login/login.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { EmployeeComponent } from './components/employee/employee.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { FooterComponent } from './components/footer/footer.component';
     EmployeeCardsComponent,
     AddProductComponent,
     LoginComponent,
-    FooterComponent
+    FooterComponent,
+    EmployeeComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import { AdminLayoutComponent } from './components/admin-layout/admin-layout.com
 import { LoginComponent } from './components/auth/login/login.component';
 import { EmployeeCardsComponent } from './components/employee-cards/employee-cards.component';
 import { EmployeeDashboardComponent } from './components/employee-dashboard/employee-dashboard.component';
+import { EmployeeComponent } from './components/employee/employee.component';
 import { HomeComponent } from './components/home/home.component';
 import { InventoryComponent } from './inventory/inventory.component';
 
@@ -14,11 +15,12 @@ const routes: Routes = [
   {path : 'home', component : HomeComponent},
   {path : 'login', component : LoginComponent},
   {path : 'admin-dashboard', component: AdminDashboardComponent},
-  {path : 'inventory', component : InventoryComponent},
+  {path : 'manage-inventory', component : InventoryComponent},
   {path : 'admin-layout', component : AdminLayoutComponent},
   {path : 'employee-dashboard', component : EmployeeDashboardComponent},
   {path : 'employee-cards', component : EmployeeCardsComponent},
   {path : 'add-product', component : AddProductComponent},
+  {path : 'manage-employee', component : EmployeeComponent},
 ];
 
 @NgModule({

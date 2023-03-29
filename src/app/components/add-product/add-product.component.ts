@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MdbModalRef } from 'mdb-angular-ui-kit/modal';
+import { Inventory } from 'src/app/pojos/Inventory';
 
 @Component({
   selector: 'app-add-product',
@@ -18,9 +19,9 @@ export class AddProductComponent implements OnInit{
   quantity !: number;
   description !: string;
 
-  constructor(
-    private fb : FormBuilder
-  ){}
+  productObj !: Inventory;
+  
+  constructor(private fb : FormBuilder){}
 
   ngOnInit(): void {
     this.form = this.fb.group({
@@ -37,8 +38,6 @@ export class AddProductComponent implements OnInit{
 
   }
 
-  addProduct(){
-    
-  }
+  addProduct(){}
 
 }

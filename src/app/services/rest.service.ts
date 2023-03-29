@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Cashier } from '../pojos/Cashier';
+import { Customer } from '../pojos/Customer';
 import { Inventory } from '../pojos/Inventory';
 
 @Injectable({
@@ -38,6 +39,10 @@ export class RestService {
     return this.http.put(editUrl, invObj);
   }
 
+  // delete a product
+  removeProduct(id: number): Observable<any>{
+    return this.http.delete(this.strUrl + '/removeProduct' + id);
+  }
 
   //get Employees
   getEmployee():Observable<any>{
@@ -50,7 +55,7 @@ export class RestService {
   }
 
 
-  // add a new employee 
+  // create a new employee 
   addEmployee(cahier: Cashier): Observable<any> {
     const headers = { 'content-type': 'application/json' };
     const body = JSON.stringify(cahier);
@@ -73,6 +78,14 @@ export class RestService {
   //get all Customers
   getCustomer():Observable<any>{
     return this.http.get(this.strUrl + '/getCustomer');
+  }
+
+  // create a customer
+  addCustomer(customer: Customer):Observable<any>{
+    const headers = { 'content-type': 'application/json' };
+    const body = JSON.stringify(customer);
+    console.log(body);
+    return this.http.post(this.strUrl + '/addCustomer', body, { 'headers': headers });
   }
 
   //get all Transactions
